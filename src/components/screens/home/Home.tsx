@@ -6,7 +6,7 @@ import styles from './Home.module.scss';
 
 const Home: FC = () => {
   return (
-    <Layout>
+    <Layout title="Home page">
       <h1>Hello world</h1>
     </Layout>
   );

@@ -2,6 +2,9 @@ import { FC, PropsWithChildren } from 'react';
 import { Poppins } from 'next/font/google';
 
 import Header from './header/Header';
+import Meta from '../seo/Meta';
+
+import { IMeta } from '../seo/meta.interface';
 
 const poppins = Poppins({
   weight: ['300', '400', '700'],
@@ -9,12 +12,21 @@ const poppins = Poppins({
   variable: '--poppins',
 });
 
-const Layout: FC<PropsWithChildren<unknown>> = ({ children }) => {
+const Layout: FC<PropsWithChildren<IMeta>> = ({
+  children,
+  title,
+  description,
+}) => {
   return (
-    <div className={poppins.variable}>
-      <Header />
-      <main>{children}</main>
-    </div>
+    <Meta
+      title={title}
+      description={description}
+    >
+      <div className={poppins.variable}>
+        <Header />
+        <main>{children}</main>
+      </div>
+    </Meta>
   );
 };
 
