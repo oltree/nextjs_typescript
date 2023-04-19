@@ -1,10 +1,9 @@
-import { NextPage } from 'next';
-
 import Layout from '@/components/layout/Layout';
 
 import { useRouter } from 'next/router';
+import { NextPageAuth } from '@/types/page';
 
-const About: NextPage = () => {
+const About: NextPageAuth = () => {
   const { push, replace } = useRouter();
 
   return (
@@ -15,5 +14,7 @@ const About: NextPage = () => {
     </Layout>
   );
 };
+
+About.isOnlyUser = true;
 
 export default About;
