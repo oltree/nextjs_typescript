@@ -8,7 +8,7 @@ const About: NextPage = () => {
   const { push, replace } = useRouter();
 
   return (
-    <Layout>
+    <Layout title="about us">
       <h2>About</h2>
       <button onClick={() => push('/')}>back</button>
       <button onClick={() => replace('/')}>back</button>

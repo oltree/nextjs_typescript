@@ -18,6 +18,7 @@ export const getStaticProps: GetStaticProps<ICarData> = async () => {
 
   return {
     props: { cars },
+    revalidate: 60,
   };
 };
 
