@@ -12,7 +12,7 @@ This pet project is a training project for the study of technology NextJS.
 - **React:** A JavaScript library for building user interfaces.
 - **Axios:** A library for making HTTP requests.
 - **TypeScript:** A statically typed programming language.
-- - **Sass:** A CSS preprocessor that allows the use of variables, nesting, and other features.
+- **Sass:** A CSS preprocessor that allows the use of variables, nesting, and other features.
 
 ## Available Scripts
 
